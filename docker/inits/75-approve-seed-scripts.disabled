@@ -1,0 +1,28 @@
+// Approve the seed job so it can run.
+// Requires it to have been run once so it gets flagged as needing approval
+//   then it can be approved.
+//
+// http://<host>/scriptApproval/
+
+import org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval
+import jenkins.model.Jenkins
+
+job = Jenkins.instance.getItemByFullName('SeedJob')
+jobwait = job.scheduleBuild2(0).get()
+sleep(1000)
+
+// Get list to remove, then remove in another loop
+// Doing both in one loop throws ConcurrentModificationException
+scriptApproval = ScriptApproval.get()
+arrayToRemove = []
+scriptApproval.pendingScripts.each {
+    arrayToRemove.add(it.hash)
+}
+arrayToRemove.each {
+    scriptApproval.approveScript(it)
+}
+
+// Save approvals
+scriptApproval.save()
+// Rerun the seed job
+jobwait = job.scheduleBuild2(0).get()

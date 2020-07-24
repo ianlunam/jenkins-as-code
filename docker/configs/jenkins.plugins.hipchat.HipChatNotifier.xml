@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.hipchat.HipChatNotifier_-DescriptorImpl plugin="hipchat@2.2.1">
+  <server>XXXXXXXXXXX.hipchat.com</server>
+  <credentialId>my--hipchat-user</credentialId>
+  <v2Enabled>false</v2Enabled>
+  <room>My Jenkins Notifications</room>
+  <sendAs>My-Jenkins-Dev</sendAs>
+  <cardProvider>jenkins.plugins.hipchat.impl.DefaultCardProvider</cardProvider>
+  <configVersion>2.2.1</configVersion>
+</jenkins.plugins.hipchat.HipChatNotifier_-DescriptorImpl>

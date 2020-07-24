@@ -1,0 +1,39 @@
+{
+    "users": [
+        "ian.lunam",
+        "admin"
+    ],
+    "perms": [
+        "hudson.model.View.Delete",
+        "hudson.model.Computer.Connect",
+        "hudson.model.Run.Delete",
+        "hudson.model.Item.Read",
+        "com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains",
+        "hudson.model.Computer.Create",
+        "hudson.model.View.Configure",
+        "hudson.model.Computer.Build",
+        "hudson.model.Item.Configure",
+        "hudson.model.Hudson.Administer",
+        "hudson.model.Item.Cancel",
+        "com.cloudbees.plugins.credentials.CredentialsProvider.View",
+        "hudson.model.Computer.Delete",
+        "hudson.model.Item.Build",
+        "hudson.scm.SCM.Tag",
+        "hudson.model.Item.Move",
+        "hudson.model.Item.Discover",
+        "hudson.model.Hudson.Read",
+        "com.cloudbees.plugins.credentials.CredentialsProvider.Update",
+        "hudson.model.Item.Create",
+        "hudson.model.Item.Workspace",
+        "com.cloudbees.plugins.credentials.CredentialsProvider.Delete",
+        "hudson.model.Computer.Provision",
+        "hudson.model.Run.Replay",
+        "hudson.model.View.Read",
+        "hudson.model.View.Create",
+        "hudson.model.Item.Delete",
+        "hudson.model.Computer.Configure",
+        "com.cloudbees.plugins.credentials.CredentialsProvider.Create",
+        "hudson.model.Computer.Disconnect",
+        "hudson.model.Run.Update"
+    ]
+}

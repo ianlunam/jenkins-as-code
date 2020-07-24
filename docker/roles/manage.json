@@ -1,0 +1,23 @@
+{
+    "users": [],
+    "perms": [
+        "hudson.model.Hudson.Read",
+        "hudson.model.View.Delete",
+        "hudson.model.Item.Create",
+        "hudson.model.Run.Delete",
+        "hudson.model.Item.Workspace",
+        "hudson.model.View.Configure",
+        "hudson.model.Run.Replay",
+        "hudson.model.Item.Configure",
+        "hudson.model.View.Read",
+        "hudson.model.View.Create",
+        "hudson.model.Item.Cancel",
+        "hudson.model.Item.Read",
+        "com.cloudbees.plugins.credentials.CredentialsProvider.View",
+        "hudson.model.Item.Build",
+        "hudson.scm.SCM.Tag",
+        "hudson.model.Item.Move",
+        "hudson.model.Item.Discover",
+        "hudson.model.Run.Update"
+    ]
+}
